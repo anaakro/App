@@ -17,7 +17,19 @@ function addRow() {
 	td3.innerHTML = document.getElementById("cat").value;
 	td4.innerHTML = document.getElementById("amount").value;
 
-int Balance = Balance + td4;
+int Balance;
+
+if (Balance == 0){
+
+Balance = td4;
+
+}
+
+else{
+
+Balance = Balance + td4;
+
+}
 
 	row.appendChild(td1);
 	row.appendChild(td2);
