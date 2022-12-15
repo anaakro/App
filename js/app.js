@@ -8,28 +8,22 @@ function addRow() {
 	var td2 = document.createElement("td");
 	var td3 = document.createElement("td");
 	var td4 = document.createElement("td");
-		var td5 = document.createElement("td");
-	
+	var td5 = document.createElement("td");
+
 	var row = document.createElement("tr");
-		
-		
+
+
 
 	td1.innerHTML = document.getElementById("descr").value;
 	td2.innerHTML = document.getElementById("date").value;
 	td3.innerHTML = document.getElementById("cat").value;
 	td4.innerHTML = document.getElementById("amount").value;
-	td5.innerHTML = document.getElementById("amount").value;
-	
-	
-	var bala = td5;
-	
 
-if (bala == td4){
-td5 = td5;
-}
-else{
-td5 = td5 + td4;
-}
+
+	var array = [];
+
+
+	array.push(td4.value)
 
 	row.appendChild(td1);
 	row.appendChild(td2);
