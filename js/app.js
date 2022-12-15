@@ -18,22 +18,15 @@ function addRow() {
 	td3.innerHTML = document.getElementById("cat").value;
 	td4.innerHTML = document.getElementById("amount").value;
 
+var Balance = Balance + td4;
+
 	row.appendChild(td1);
 	row.appendChild(td2);
 	row.appendChild(td3);
 	row.appendChild(td4);
-
-	tableBody.appendChild(row);
-}
-
-function balance() {
-	var tableBody = document.getElementById("table-body");
-	var td5 = document.createElement("td");
-		td5.innerHTML = document.getElementById("amount").value;
-	var Balance= Balance + td5;
-
 	row.appendChild(Balance);
 
+	tableBody.appendChild(row);
 }
 
 
