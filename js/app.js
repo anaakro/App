@@ -22,10 +22,20 @@ function addRow() {
 	row.appendChild(td2);
 	row.appendChild(td3);
 	row.appendChild(td4);
-	//row.appendChild(td5);
 
 	tableBody.appendChild(row);
 }
+
+function balance() {
+	var tableBody = document.getElementById("table-body");
+	var td5 = document.createElement("td");
+		td5.innerHTML = document.getElementById("amount").value;
+	var Balance= Balance + td5;
+
+	row.appendChild(Balance);
+
+}
+
 
 
 if ("serviceWorker" in navigator) {
