@@ -21,6 +21,7 @@ function addRow() {
 	row.appendChild(td2);
 	row.appendChild(td3);
 	row.appendChild(td4);
+	row.appendChild(td4);
 
 	tableBody.appendChild(row);
 }
