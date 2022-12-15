@@ -19,7 +19,17 @@ function addRow() {
 	td3.innerHTML = document.getElementById("cat").value;
 	td4.innerHTML = document.getElementById("amount").value;
 	td5.innerHTML = document.getElementById("amount").value;
+	
+	
+	var bala = td5;
+	
 
+if (bala == td4){
+td5 = td5;
+}
+else{
+td5 = td5 + td4;
+}
 
 	row.appendChild(td1);
 	row.appendChild(td2);
