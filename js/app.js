@@ -1,58 +1,36 @@
 const container = document.querySelector(".container");
-const coffees = [
-    {
-        name: "Perspiciatis",
-        image: "images/coffee1.jpg"
-    },
-    {
-        name: "Voluptatem",
-        image: "images/coffee2.jpg"
-    },
-    {
-        name: "Explicabo",
-        image: "images/coffee3.jpg"
-    },
-    {
-        name: "Rchitecto",
-        image: "images/coffee4.jpg"
-    },
-    {
-        name: " Beatae",
-        image: "images/coffee5.jpg"
-    },
-    {
-        name: " Vitae",
-        image: "images/coffee6.jpg"
-    },
-    {
-        name: "Inventore",
-        image: "images/coffee7.jpg"
-    },
-    {
-        name: "Veritatis",
-        image: "images/coffee8.jpg"
-    },
-    {
-        name: "Accusantium",
-        image: "images/coffee9.jpg"
-    }
-];
-const showCoffees = () => {
-    let output = "";
-    coffees.forEach(
-        ({name, image}) =>
-            (output += `
-              <div class="card">
-                <img class="card--avatar" src=${image} />
-                <h1 class="card--title">${name}</h1>
-                <a class="card--link" href="#">Taste</a>
-              </div>
-              `)
-    );
-    container.innerHTML = output;
+
+
+function addRow() {
+   "use strict";
+
+    var table = document.getElementById("table");
+    var td1 = document.createElement("td");
+    var td2 = document.createElement("td");
+    var td3 = document.createElement("td");    
+    var td4 = document.createElement("td");    
+
+    td1.innerHTML = document.getElementById("descr").value;
+    td2.innerHTML  = document.getElementById("date").value;
+    td3.innerHTML  = document.getElementById("cat").value;
+    td4.innerHTML  = document.getElementById("amount").value;
+
+    row.appendChild(td1);
+    row.appendChild(td2);
+    row.appendChild(td3);
+    row.appendChild(td4);
+
+    table.children[0].appendChild(row);
+    
 };
 
-document.addEventListener("DOMContentLoaded", showCoffees);
+
+
+{
+  "" : descr,"2","3",
+  "alphabet" : "a", "b", "c"
+}
+
 
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", function () {
