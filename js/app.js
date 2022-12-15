@@ -8,6 +8,8 @@ function addRow() {
 	var td2 = document.createElement("td");
 	var td3 = document.createElement("td");
 	var td4 = document.createElement("td");
+		var td5 = document.createElement("td");
+	
 	var row = document.createElement("tr");
 		
 		
@@ -16,12 +18,14 @@ function addRow() {
 	td2.innerHTML = document.getElementById("date").value;
 	td3.innerHTML = document.getElementById("cat").value;
 	td4.innerHTML = document.getElementById("amount").value;
+	td5.innerHTML = document.getElementById("amount").value;
+
 
 	row.appendChild(td1);
 	row.appendChild(td2);
 	row.appendChild(td3);
 	row.appendChild(td4);
-	row.appendChild(td4);
+	row.appendChild(td5);
 
 	tableBody.appendChild(row);
 }
