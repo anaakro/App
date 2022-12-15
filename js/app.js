@@ -7,8 +7,7 @@ function addRow() {
 	var td1 = document.createElement("td");
 	var td2 = document.createElement("td");
 	var td3 = document.createElement("td");
-	var td4 = document.createElement("td");
-	var td5 = document.createElement("td");
+	int td4 = document.createElement("td");
 	var row = document.createElement("tr");
 		
 		
@@ -18,7 +17,7 @@ function addRow() {
 	td3.innerHTML = document.getElementById("cat").value;
 	td4.innerHTML = document.getElementById("amount").value;
 
-var Balance = Balance + td4;
+int Balance = Balance + td4;
 
 	row.appendChild(td1);
 	row.appendChild(td2);
